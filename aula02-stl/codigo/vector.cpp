@@ -4,11 +4,16 @@ using namespace std;
 
 int main() {
   vector<int> v = {1, 2, 3};
-  v.push_back(4); // Inserção - O(1) amortizado
   v.reserve(100); // Aloca espaço para evitar realocações
+  v.resize(3); // Redimensiona o vetor
+  v.assign(6,12); // Redimensiona o vetor e troca todos os valores por cópias do segundo parâmetro
+  
+  // Inserção/Remoção
+  v.push_back(4); // Inserção - O(1) amortizado
   v.insert(v.begin() + 1, 10); // Inserção no meio - O(N)
   v.erase(v.begin() + 2); // Remoção de um elemento - O(N)
   v.pop_back(); // Remove o último elemento - O(1)
+  
   cout << v.front() << " " << v.back() << endl; // Acesso ao primeiro e último elemento - O(1)
   cout << v[1] << endl; // Acesso Aleatório - O(1)
   
@@ -20,7 +25,7 @@ int main() {
   // sort
   sort(v.begin(), v.end()); // Ordena crescente
   sort(v.rbegin(), v.rend()); // Ordena decrescente
-  sort(v.begin(), v.end(), greater<int>()); // Alternativa
+  sort(v.begin(), v.end(), greater<int>()); // Alternativa ao de cima
   
   // lower_bound e upper_bound
   vector<int> v2b = {1, 3, 3, 5, 7};
