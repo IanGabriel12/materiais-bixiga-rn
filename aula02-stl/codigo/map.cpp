@@ -13,11 +13,11 @@ int main() {
   else cout << "Não tem Bixiga" << endl;
 
   //lower_bound e upper_bound no map
-  auto [chave_lb, valor_lb] = *m.upper_bound("Maratona");
-  auto [chave_ub, valor_ub] = *m.upper_bound("Maratona");
+  auto [chave_lb, valor_lb] = *m.upper_bound("Bixiga");
+  auto [chave_ub, valor_ub] = *m.upper_bound("Bixiga");
 
-  cout << chave_lb << " " << valor_lb << endl; // Maratona 200
-  cout << chave_ub << " " << valor_ub << endl; // Bixiga 100
+  cout << chave_lb << " " << valor_lb << endl; // Bixiga 100
+  cout << chave_ub << " " << valor_ub << endl; // Maratona 200
 
   // unordered_map
   unordered_map<string, int> um;
