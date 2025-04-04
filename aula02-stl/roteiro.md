@@ -2,9 +2,9 @@
 
 ## TODO
 - [X] Definir a ordem dos tópicos
-- [ ] Preparar Snippets das Estruturas e Funções <!--EM PROGRESSO-->
-- [ ] Preparar Slides <!--EM PROGRESSO-->
-- [ ] Criar Contest no Vjudge
+- [X] Preparar Snippets das Estruturas e Funções
+- [X] Preparar Slides
+- [X] Criar Contest no Vjudge
 
 Ordem dos tópicos:
 1. O que são Estruturas de Dados
@@ -111,7 +111,8 @@ Ordem dos tópicos:
 - Mesma complexidade das operações do set
 - Busca também pode ser feita com .count() ou .find()
 - Pares Chave-Valor
-- Também não aceita chaves repetidas 
+- Também não aceita chaves repetidas
+- **OBS:** Cuidado ao usar o operador [], caso um elemento com a chave especificada não exista no map ele vai criar esse elemento
 - **OBS:** para o lower_bound e upper_bound, deve ser usado o método do próprio map ao invés da função padrão da STL.
 
 ## unordered_map
