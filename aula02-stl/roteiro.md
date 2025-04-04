@@ -25,11 +25,13 @@ Ordem dos tópicos:
 16. multimap
 
 ## O que são Estruturas de Dados?
-...
+- São formas de organizar e guardar dados
+- Diferentes formas de Organizar dados podem nos ajudar de diferentes formas
 
 ## O que é a STL e por que aprender sobre ela?
 - Biblioteca Padrão do C++
 - Contém implementações eficientes de funções e estruturas de dados
+- Já tá pronto, é só usar
 
 ## std::array
 **Principais Características**
@@ -79,16 +81,16 @@ Ordem dos tópicos:
 **Principais Características**
 - Mantém o maior no topo
 - Inserção em O(log n)
-- Suporta Comparadores personalizados. Exemplo: priority_queue<int, vector<int>, greater<int>> pq;
+- Suporta Comparadores personalizados. Exemplo: ```priority_queue<int, vector<int>, greater<int>> pq;```
 - Constante baixa
 
 ## set
 **Principais Características**
 <!-- Mencionar a busca usando set.count() > 0 e usando set.find() != set.end()-->
 - Inserção, Remoção e Busca em O(log n)
-- Busca pode ser feita com .count() ou .find()
+- Busca pode ser feita com ```.count()``` ou ```.find()```
 - Não aceita chaves repetidas
-- **OBS:** para o lower_bound e upper_bound, deve ser usado o método do próprio set ao invés da função padrão da STL.
+- **OBS:** para o ```lower_bound``` e ```upper_bound```, deve ser usado o método do próprio set ao invés da função padrão da STL.
 
 ## unordered_set
 **Principais Características**
@@ -101,29 +103,29 @@ Ordem dos tópicos:
 **Principais Caracterísiticas**
 - Suporta Chaves repetidas
 <!-- Nas versões multi, o erase() remove todos os elementos correspondentes à uma chave, a remoção de somente um elemento com essa chave ainda pode ser feita com a passagem de um iterator ao invés de valor de chave -->
-- Comportamento diferente das funções insert() e erase()
+- Comportamento diferente das funções ```insert()``` e ```erase()```
 - erase(valor de uma chave) apaga **todas** as ocorrências dessa chave, para apagar somente um elemento precisa passar um iterador
-- Operador [] não existe
+- Operador ```[]``` não existe
 
 ## map
 **Principais Características**
 <!-- Mencionar a busca usando map.count() > 0 e usando map.find() != map.end()-->
-- Mesma complexidade das operações do set
-- Busca também pode ser feita com .count() ou .find()
+- Mesma complexidade das operações do ```set```
+- Busca também pode ser feita com ```.count()``` ou ```.find()```
 - Pares Chave-Valor
 - Também não aceita chaves repetidas
-- **OBS:** Cuidado ao usar o operador [], caso um elemento com a chave especificada não exista no map ele vai criar esse elemento
-- **OBS:** para o lower_bound e upper_bound, deve ser usado o método do próprio map ao invés da função padrão da STL.
+- **OBS:** Cuidado ao usar o operador ```[]```, caso um elemento com a chave especificada não exista no map ele vai criar esse elemento
+- **OBS:** para o ```lower_bound``` e ```upper_bound```, deve ser usado o método do próprio map ao invés da função padrão da STL.
 
 ## unordered_map
 **Principais Características**
-- Relação com o map similar à relação do unordered_set com set
+- Relação com o map similar à relação do ```unordered_set``` com ```set```
 
 ## multimap
 **Principais Caracterísiticas**
 - Suporta Chaves repetidas
 <!-- Nas versões multi, o erase() remove todos os elementos correspondentes à uma chave, a remoção de somente um elemento com essa chave ainda pode ser feita com a passagem de um iterator ao invés de valor de chave -->
-- Comportamento diferente das funções insert() e erase()
+- Comportamento diferente das funções ```insert()``` e ```erase()```
 - erase(valor de uma chave) apaga **todas** as ocorrências dessa chave, para apagar somente um elemento precisa passar um iterador
-- Operador [] não existe
+- Operador ```[]``` não existe
 
