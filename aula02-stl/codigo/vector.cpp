@@ -26,6 +26,32 @@ int main() {
   sort(v.begin(), v.end()); // Ordena crescente
   sort(v.rbegin(), v.rend()); // Ordena decrescente
   sort(v.begin(), v.end(), greater<int>()); // Alternativa ao de cima
+
+  //Ordem lexicográfica
+  vector<string> strs = { "ab",   // a seguido de b
+                          "aba",  // a, b, a
+                          "abb",  // a, b, b
+                          "abc",  // a, b, c
+                          "a",    // apenas a (vem antes de strings que começam com 'a' e possuem mais caracteres)
+                          "ac",   // a seguido de c
+                          "b",    // começa com b, maior que strings que começam com a
+                          "ba",   // b, a
+                          "bb"    // b, b
+  };
+
+  sort(strs.begin(),strs.end());
+  /* Nova ordem:
+        a
+        ab
+        aba
+        abb
+        abc
+        ac
+        b
+        ba
+        bb
+  */
+  for (auto s : strs) cout << s << endl;
   
   // lower_bound e upper_bound
   vector<int> v2b = {1, 3, 3, 5, 7};
